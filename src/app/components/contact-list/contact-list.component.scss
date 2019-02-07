@@ -1,0 +1,61 @@
+.avatar {
+    display: inline-block;
+    position: relative;
+    height: 150px;
+    width: 100%;
+    max-width: 150px;
+    background-image: url(../../../assets/Avatar.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.contact {
+    background-color: #231f20;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-wrapper {
+    position: relative;
+}
+
+h3 {
+    border-bottom: 3px solid yellow;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.delete {
+    position: absolute;
+    top: 30px;
+    padding: 10px 20px;
+    background-color: orangered;
+    border-radius: 5px;
+    z-index: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.col {
+	&:nth-child(odd) .delete {
+		left: 0;
+	}
+	&:nth-child(even) .delete {
+		right: 0;
+	}
+
+    &:hover {
+        &:nth-child(odd) .delete {
+            left: -50px;
+        }
+        &:nth-child(even) .delete {
+            right: -50px;
+        }
+    }
+}

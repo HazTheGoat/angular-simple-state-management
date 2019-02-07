@@ -1,0 +1,15 @@
+.flying-label{
+	position: relative;
+
+	label{
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+	}
+}
+
+.form-control{
+	border-color: #231f20;
+	border-width: 2px;
+}
