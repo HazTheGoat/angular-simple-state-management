@@ -20,9 +20,7 @@ import { CommonModule } from '@angular/common';
 		NgxsModule.forRoot([
 			ContactState
 		])
-
 	],
-	providers: [],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
